@@ -1,5 +1,5 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/OFWe9D1G)
-# 👗 Pastimes – Pre-Owned Branded Clothing Marketplace
+# Pastimes – Pre-Owned Branded Clothing Marketplace
 
 > **Module:** Web Development Intermediate (WEDE6021)  
 > **Student:** Nkuna Kuhlula  
@@ -10,7 +10,7 @@ GROUP 14
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 Pastimes is a fully functional PHP web application that allows users to buy and sell pre-owned branded clothing. The platform supports three user roles — **Buyer**, **Seller** and **Administrator** — each with their own set of features and access levels.
 Use these credetentials to test the website 
@@ -21,7 +21,7 @@ Role: Admin, Email: admin@pastimes.co.za, Password: admin123
 PasswordCustomerj.doe@abc.co.zapasswordAdminadmin@pastimes.co.zaadmin123
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 ClothingStore/
@@ -59,7 +59,7 @@ ClothingStore/
 
 ---
 
-## 🗄️ Database Tables
+## Database Tables
 
 | Table | Description |
 |-------|-------------|
@@ -70,7 +70,7 @@ ClothingStore/
 
 ---
 
-## ⚙️ How to Run Locally
+## How to Run Locally
 
 ### Prerequisites
 - [XAMPP](https://www.apachefriends.org/) (Apache + MySQL + PHP)
@@ -103,7 +103,7 @@ http://localhost/ClothingStore/login.php
 
 ---
 
-## 🔑 Login Credentials
+## Login Credentials
 
 ### Customer Login
 | Field | Value |
@@ -160,7 +160,7 @@ http://localhost/ClothingStore/login.php
 
 ---
 
-## 🎨 Design & Code Standards
+## Design & Code Standards
 
 - **Font:** Poppins / Calibri
 - **Colour Scheme:** Dark navy (`#1a1a2e`) + accent red (`#e94560`)
@@ -172,7 +172,7 @@ http://localhost/ClothingStore/login.php
 
 ---
 
-## 📹 Video Presentation
+## Video Presentation
 
 A video demonstration is included in the submission folder showing:
 - Database setup and table creation
