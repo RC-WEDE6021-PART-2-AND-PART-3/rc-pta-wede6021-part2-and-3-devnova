@@ -1,7 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/OFWe9D1G)
 # 👗 Pastimes – Pre-Owned Branded Clothing Marketplace
 
-> **Module:** Web Development Intermediate (WEDE6020)  
+> **Module:** Web Development Intermediate (WEDE6021)  
 > **Student:** Nkuna Kuhlula  
 > **Student Number:** ST10440743  
 > **Institution:** Rosebank College (The Independent Institute of Education)  
