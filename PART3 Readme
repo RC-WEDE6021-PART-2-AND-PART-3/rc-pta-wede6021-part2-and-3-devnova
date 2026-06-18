@@ -1,0 +1,167 @@
+# Pastimes – Pre-Owned Branded Clothing Marketplace
+### POE Final Submission | WEDE6021 | ST10440743
+
+> **Student:** Nkuna Kuhlula &nbsp;|&nbsp; **Number:** ST10440743  
+> **Module:** Web Development Intermediate (WEDE6021)  
+> **Institution:** Rosebank International 
+
+---
+
+## Quick Start
+
+```
+1. Extract folder to:  C:\xampp\htdocs\ClothingStore
+2. Start Apache + MySQL in XAMPP
+3. Visit:  http://localhost/ClothingStore/loadClothingStore.php
+4. Visit:  http://localhost/ClothingStore/login.php
+```
+
+---
+
+## Login Credentials
+
+| Role | Email | Password |
+|------|-------|----------|
+| Customer | j.doe@abc.co.za | password |
+| Admin | admin@pastimes.co.za | admin123 |
+
+---
+
+## Project Structure
+
+```
+ClothingStore/
+├── index.php               Startup landing page (eShop type + goals)
+├── login.php               Login with MD5 hash validation + sticky form
+├── register.php            New user registration (pending approval)
+├── shop.php                eShop — items table, AddToCart, ShowCart
+├── cart.php                Shopping cart — edit qty, continue shopping
+├── checkout.php            Order confirm — orderNum + sessionId receipt
+├── history.php             Purchase history with grand total
+├── messages.php            Buyer/Seller messaging
+├── logout.php              Session destroy
+│
+├── DBConn.php              MySQLi database connection
+├── createTable.php         Drops/recreates tblUser + loads userData.txt
+├── loadClothingStore.php   Creates ALL tables + seeds data
+├── myClothingStore.sql     Full DDL with 30 entries
+├── userData.txt            5 fictitious pipe-delimited users
+├── SELF_REFLECTION.txt     Section 2 self-reflection (~1500 words)
+│
+├── classes/
+│   └── Cart.php            Cart class: AddItem, RemoveItem, Checkout,
+│                           EmptyCart, Login, ProcessInput, ShowCart,
+│                           UpdateQuantity, GetTotal, GetCount
+│
+├── seller/
+│   └── requestItem.php     Seller item submission with image upload
+│
+├── admin/
+│   ├── adminLogin.php      Admin login (hashed password + admin email)
+│   ├── dashboard.php       User CRUD: Add, Edit, Delete, Verify
+│   ├── manageClothes.php   Clothing CRUD + seller request approval
+│   ├── adminMessages.php   Admin messaging to buyers/sellers
+│   └── adminLogout.php     Admin session destroy
+│
+├── css/
+│   └── style.css           Full dark theme professional stylesheet
+│
+├── images/
+│   ├── item1.jpg – item5.jpg   Clothing placeholder images
+│
+└── uploads/                Seller uploaded item photos
+```
+
+---
+
+## Database Tables
+
+| Table | Purpose |
+|-------|---------|
+| `tblUser` | All registered buyers and sellers |
+| `tblAdmin` | Administrator accounts |
+| `tblClothes` | Clothing product listings |
+| `tblOrder` | Customer orders with session + order reference |
+| `tblOrderLine` | Individual order line items |
+| `tblSellerRequest` | Seller item submission requests |
+| `tblMessage` | In-app messaging between users |
+
+---
+
+## POE Rubric Coverage
+
+### Section 1 – Application Features
+| Feature | Status |
+|---------|--------|
+| Cart class with AddItem, RemoveItem, Checkout, EmptyCart, Login, ProcessInput |/|
+| Startup page states eShop type and goals with CSS |/|
+| eShop button displays items table with AddToCart + ShowCart |/|
+| ShowCart displays shopping cart contents |/|
+| Admin login prompt when Admin URL/button clicked |/|
+| Admin landing page with Edit, Delete, Add/Insert buttons |/|
+| Add, Delete, Edit work on tblClothes |/|
+| Same item increases quantity (no duplicate row) |/|
+| Continue shopping keeps cart intact |/|
+| Checkout returns to login/register |/|
+| Checkout shows orderNum and sessionId |/|
+| Checkout writes to orderLine + decrements quantity |/|
+| Cart array empty after checkout |/|
+| Purchase history with total at bottom |/|
+| Seller request with image + brand + description |/|
+| Admin messaging to buyers/sellers |/|
+| Web app executes and displays home page |/|
+
+### Section 2 – Self-Reflection
+| Section | Status |
+|---------|--------|
+| Introduction  |/|
+| Role in the team |/|
+| Research scenarios |/|
+| Strengths and weaknesses |/|
+| Conclusion |/|
+
+---
+
+## Technical Details
+
+- **Language:** PHP 8+ with MySQLi
+- **Database:** MySQL (XAMPP)
+- **Password Hashing:** MD5 (as per module spec)
+- **Session Management:** PHP native sessions
+- **Cart Architecture:** OOP Cart class stored in `$_SESSION`
+- **Security:** Prepared statements throughout (SQL injection safe)
+- **Design:** Custom dark theme CSS with CSS variables, Grid and Flexbox
+- **Font:** Inter (Google Fonts) with Calibri fallback
+- **Responsive:** Mobile-friendly responsive layout
+
+---
+
+## Video Demonstration
+
+The video submission covers:
+1. Database setup via `loadClothingStore.php`
+2. New user registration + HTML5 validation
+3. Login with correct and incorrect password (sticky form)
+4. "User X is logged in" display
+5. eShop items table with AddToCart and ShowCart
+6. Cart — add same item (quantity increments), edit qty, continue shopping
+7. Checkout — orderNum + sessionId receipt, orderLine written
+8. Purchase history with grand total
+9. Admin login + verify user + add/edit/delete customers
+10. Admin manage clothing (add/edit/delete items)
+11. Seller request submission
+
+---
+
+## References
+
+- PHP Documentation (2024) — https://www.php.net/docs.php
+- MySQLi Documentation — https://www.php.net/manual/en/book.mysqli.php  
+- W3Schools PHP Tutorial — https://www.w3schools.com/php
+- Depop (2024) — https://www.depop.com
+- Vinted (2024) — https://www.vinted.com
+- Inter Font — https://fonts.google.com/specimen/Inter
+
+---
+
+© 2026 Nkuna Kuhlula – ST10440743 – WEDE60201
